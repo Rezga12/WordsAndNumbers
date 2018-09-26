@@ -102,6 +102,7 @@ namespace wordsAndNumbers
             {
 
                 Console.WriteLine(sixDigit(Console.ReadLine()));
+                a
             }
         }
     }
