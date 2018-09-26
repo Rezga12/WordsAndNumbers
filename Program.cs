@@ -101,8 +101,19 @@ namespace wordsAndNumbers
             while (true)
             {
 
-                Console.WriteLine(sixDigit(Console.ReadLine()));
-                a
+                string pref = "";
+                int a = Int32.Parse(Console.ReadLine());
+
+                if(a < 0) {
+                    a = a * -1;
+                    pref = "minus ";
+                }
+                if(a == 0) {
+                    Console.WriteLine("Nuli");
+                    continue;
+                }
+
+                Console.WriteLine(pref + sixDigit(a + ""));
             }
         }
     }
